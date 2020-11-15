@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="550.0" minWidth="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.uiController.ContactController">
+   <children>
+      <Button fx:id="btn_insert" layoutX="38.0" layoutY="38.0" minWidth="80.0" mnemonicParsing="false" text="Insert" />
+      <Button fx:id="btn_close" layoutX="149.0" layoutY="38.0" minWidth="80.0" mnemonicParsing="false" text="Close" />
+      <TableView fx:id="tbl_contact" prefHeight="550.0" prefWidth="600.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="100.0">
+        <columns>
+          <TableColumn fx:id="col_firstname" minWidth="120.0" prefWidth="75.0" text="FirstName" />
+          <TableColumn fx:id="col_lastname" minWidth="120.0" prefWidth="75.0" text="LastName" />
+            <TableColumn fx:id="col_age" minWidth="50.0" prefWidth="75.0" text="Age" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
