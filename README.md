@@ -1,2 +1,2 @@
 First try of javaFx.
-A simple CRUD project using postgeres database and scene builder
+A simple CRUD project using postgresql database and scene builder
